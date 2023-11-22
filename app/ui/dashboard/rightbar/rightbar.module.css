@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--bgSoft),
+    var(--bgSoft),
+    transparent
+  );
+  border-radius: 5px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: transparent;
+}
+
+.textbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.textbox input {
+  width: 70%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 10px;
+}
+.textbox button {
+  width: 30%;
+  background-color: var(--bg);
+  color: white;
+  font-family: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.textbox button:hover {
+  background-color: var(--bgSoft);
+  outline: 1px solid white;
+}
