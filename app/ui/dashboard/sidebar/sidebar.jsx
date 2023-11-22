@@ -31,11 +31,6 @@ const menuList = [
         icon: <ReservationIcons size="20" />,
       },
       {
-        title: 'Users',
-        path: '/dashboard/users',
-        icon: <UsersIcon />,
-      },
-      {
         title: 'Countries',
         path: '/dashboard/countries',
         icon: <CountriesIcon />,
@@ -49,6 +44,11 @@ const menuList = [
         title: 'Tours',
         path: '/dashboard/tours',
         icon: <ToursIcon />,
+      },
+      {
+        title: 'Users',
+        path: '/dashboard/users',
+        icon: <UsersIcon />,
       },
     ],
   },

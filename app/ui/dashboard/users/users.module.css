@@ -1,0 +1,33 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addButton {
+  padding: 10px 24px;
+  background-color: #09f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.addButton:hover {
+  background-color: rgb(0, 109, 181);
+}
+
+.table {
+  width: 100%;
+}
+.table td {
+  padding: 10px;
+}

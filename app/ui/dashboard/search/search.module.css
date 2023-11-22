@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(22, 45, 82, 0.62);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: text;
+  width: max-content;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: inherit;
+  font-weight: 500;
+}
