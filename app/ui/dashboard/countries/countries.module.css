@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust based on your columns */
+  grid-gap: 10px;
+}
+
+.grid div {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
