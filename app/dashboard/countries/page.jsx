@@ -48,62 +48,6 @@ const CountriesPage = () => {
             </div>
           </div>
         </div>
-        <div className={styles.card}>
-          <div className={styles.user}>
-            <Image
-              src="/noavatar.png"
-              alt=""
-              width="180"
-              height="120"
-              className={styles.userImage}
-            />
-            <div className={styles.title}>
-              <h2>TURKIYE</h2>
-            </div>
-            <div className="footer">
-              <div className={styles.buttons}>
-                <Link href="">
-                  <button className={`${styles.button} ${styles.edit}`}>
-                    <EditIcon size="15" />
-                  </button>
-                </Link>
-                <Link href="">
-                  <button className={`${styles.button} ${styles.delete}`}>
-                    <DeleteIcon size="15" />
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.user}>
-            <Image
-              src="/noavatar.png"
-              alt=""
-              width="180"
-              height="120"
-              className={styles.userImage}
-            />
-            <div className={styles.title}>
-              <h2>UNITED ARAB EMIRATES</h2>
-            </div>
-            <div className="footer">
-              <div className={styles.buttons}>
-                <Link href="">
-                  <button className={`${styles.button} ${styles.edit}`}>
-                    <EditIcon size="15" />
-                  </button>
-                </Link>
-                <Link href="">
-                  <button className={`${styles.button} ${styles.delete}`}>
-                    <DeleteIcon size="15" />
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <Pagination />
     </div>

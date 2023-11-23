@@ -18,21 +18,29 @@
 
 .textbox {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 10px;
 }
-.textbox input {
-  width: 70%;
-  height: 100%;
+
+.textbox textarea {
+  width: 100%;
   border-radius: 5px;
   border: none;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
   padding: 10px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 130px;
+  max-height: 300px;
+}
+.textbox textarea:focus {
+  outline: 1px solid #09f;
 }
 .textbox button {
-  width: 30%;
+  width: 100%;
   background-color: var(--bg);
   color: white;
   font-family: inherit;
@@ -45,5 +53,5 @@
 
 .textbox button:hover {
   background-color: var(--bgSoft);
-  outline: 1px solid white;
+  outline: 1px solid #09f;
 }

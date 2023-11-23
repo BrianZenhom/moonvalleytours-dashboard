@@ -1,0 +1,123 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addButton {
+  padding: 10px 24px;
+  background-color: #09f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.addButton:hover {
+  background-color: rgb(0, 109, 181);
+}
+
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.table td {
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.089);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+  border-right: 1px solid rgba(0, 0, 0, 0.231);
+  border-top: 1px solid rgba(113, 113, 113, 0.026);
+}
+
+.table thead tr {
+  height: 30px;
+}
+
+.cityname {
+  width: 300px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  gap: 10px;
+  width: max-content;
+}
+.userImage {
+  border-radius: 5px;
+  object-fit: cover;
+  width: 50%;
+}
+.title {
+  width: 50%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+}
+
+.view {
+  background-color: #09f;
+  display: flex;
+  padding: 5px 10px;
+}
+/* .view:hover {
+  background-color: rgba(0, 153, 255, 0.709);
+} */
+.ripple {
+  background-position: center;
+  transition: background 0.3s;
+}
+.ripple:hover {
+  background-color: #09f;
+  background-image: radial-gradient(
+    circle,
+    transparent 1%,
+    rgb(80, 183, 251) 1%
+  );
+  background-position: center;
+  background-size: 15000%;
+}
+.ripple:active {
+  transition: background 0s;
+  background-color: rgb(0, 113, 189);
+  background-size: 100%;
+}
+.delete {
+  background-color: #dc143c;
+  display: flex;
+  padding: 5px 10px;
+}
+.delete:hover {
+  background-color: rgba(220, 20, 60, 0.709);
+}
+.table thead tr td {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--textSoft);
+}
