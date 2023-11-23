@@ -57,8 +57,27 @@
 .view {
   background-color: #09f;
 }
-.view:hover {
+/* .view:hover {
   background-color: rgba(0, 153, 255, 0.709);
+} */
+.ripple {
+  background-position: center;
+  transition: background 0.4s;
+}
+.ripple:hover {
+  background-color: #09f;
+  background-image: radial-gradient(
+    circle,
+    transparent 1%,
+    rgb(80, 183, 251) 1%
+  );
+  background-position: center;
+  background-size: 15000%;
+}
+.ripple:active {
+  transition: background 0s;
+  background-color: rgb(0, 113, 189);
+  background-size: 100%;
 }
 .delete {
   background-color: #dc143c;

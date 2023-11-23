@@ -10,7 +10,9 @@ const UsersPage = ({ placeholder }) => {
       <div className={styles.top}>
         <Search placeholder="Search for a user..." />
         <Link href="/dashboard/users/add">
-          <button className={styles.addButton}>Add New</button>
+          <button className={`${styles.ripple} ${styles.addButton}`}>
+            Add New
+          </button>
         </Link>
       </div>
       <table className={styles.table}>
@@ -44,13 +46,15 @@ const UsersPage = ({ placeholder }) => {
             <td>Active</td>
             <td>
               <div className={styles.buttons}>
-                <Link href="/">
-                  <button className={`${styles.button} ${styles.view}`}>
+                <Link href="">
+                  <button
+                    className={`${styles.button} ${styles.view} ${styles.ripple}`}
+                  >
                     View
                   </button>
                 </Link>
-                <Link href="/">
-                  <button className={`${styles.button} ${styles.delete}`}>
+                <Link href="">
+                  <button className={`${styles.button} ${styles.delete} `}>
                     Delete
                   </button>
                 </Link>

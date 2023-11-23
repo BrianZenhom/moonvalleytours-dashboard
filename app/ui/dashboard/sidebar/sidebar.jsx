@@ -1,17 +1,16 @@
 import Image from 'next/image';
 import {
+  AdminIcon,
   BillIcon,
   CitiesIcon,
   CountriesIcon,
   GridTwo,
   LogoutIcon,
-  PageVisitsIcon,
   ReservationIcons,
   RevenueIcon,
   SettingsIcon,
   ToursIcon,
   TransactionsIcon,
-  UsersIcon,
 } from './icons/icons';
 import MenuLink from './menuLink/menuLink';
 import styles from './sidebar.module.css';
@@ -48,7 +47,7 @@ const menuList = [
       {
         title: 'Users',
         path: '/dashboard/users',
-        icon: <UsersIcon />,
+        icon: <AdminIcon size="20" />,
       },
     ],
   },
