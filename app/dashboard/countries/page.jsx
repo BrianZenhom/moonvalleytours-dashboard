@@ -11,7 +11,7 @@ const CountriesPage = () => {
       <div className={styles.top}>
         <Search placeholder="Search for a Country..." />
         <div className={styles.addNewButtons}>
-          <Link href="/dashboard/country/add">
+          <Link href="/dashboard/countries/add">
             <button className={styles.addButton}>Add Country</button>
           </Link>
           <Link href="/dashboard/cities">
