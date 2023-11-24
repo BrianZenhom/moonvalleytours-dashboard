@@ -13,16 +13,15 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
   gap: 20px;
   width: 100%;
-  justify-content: flex-start;
 }
 .card {
-  flex: 0 0 150px;
-  text-overflow: ellipsis;
+  flex: 1 1 200px;
 }
 .addButton {
   padding: 10px 24px;
@@ -59,7 +58,7 @@
   border-radius: 5px;
   padding-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.174);
-  width: 190px;
+  max-width: 250px;
 }
 .userImage {
   object-fit: cover;

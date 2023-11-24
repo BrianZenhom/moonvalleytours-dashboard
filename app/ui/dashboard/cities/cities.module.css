@@ -121,3 +121,9 @@
   font-weight: 500;
   color: var(--textSoft);
 }
+
+.addNewButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

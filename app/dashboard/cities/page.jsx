@@ -5,16 +5,22 @@ import Link from 'next/link';
 import styles from '@/app/ui/dashboard/cities/cities.module.css';
 import { DeleteIcon, EditIcon } from '@/app/ui/dashboard/sidebar/icons/icons';
 
-const CitiesPage = () => {
+const CitiesPage = async () => {
+  const res = await fetch('https://moonvalleytours-api.1.ie-1.fl0.io/cities');
+  const data = await res.json();
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <Search placeholder="Search for a City..." />
-        <Link href="/dashboard/countries/add">
-          <button className={`${styles.ripple} ${styles.addButton}`}>
-            Add Country
-          </button>
-        </Link>
+        <div className={styles.addNewButtons}>
+          <Link href="/dashboard/countries/add">
+            <button className={styles.addButton}>Add Country</button>
+          </Link>
+          <Link href="/dashboard/cities/add">
+            <button className={styles.addButton}>Add City</button>
+          </Link>
+        </div>
       </div>
       <table className={styles.table}>
         <thead>
@@ -28,40 +34,44 @@ const CitiesPage = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <div className={styles.user}>
-                <Image
-                  src="/noavatar.png"
-                  alt=""
-                  width="90"
-                  height="50"
-                  className={styles.userImage}
-                />
-                <span className={styles.title}>Cairo</span>
-              </div>
-            </td>
-            <td>Egypt</td>
-            <td>0</td>
-            <td>0</td>
-            <td>10/10</td>
-            <td>
-              <div className={styles.buttons}>
-                <Link href="">
-                  <button
-                    className={`${styles.button} ${styles.view} ${styles.ripple}`}
-                  >
-                    <EditIcon size="20" />
-                  </button>
-                </Link>
-                <Link href="">
-                  <button className={`${styles.button} ${styles.delete} `}>
-                    <DeleteIcon size="20" />
-                  </button>
-                </Link>
-              </div>
-            </td>
-          </tr>
+          {data.map((city) => (
+            <>
+              <tr>
+                <td>
+                  <div className={styles.user}>
+                    <Image
+                      src={city.city_image}
+                      alt=""
+                      width="150"
+                      height="60"
+                      className={styles.userImage}
+                    />
+                    <span className={styles.title}>{city.city}</span>
+                  </div>
+                </td>
+                <td>{city.country}</td>
+                <td>0</td>
+                <td>0</td>
+                <td>10/10</td>
+                <td>
+                  <div className={styles.buttons}>
+                    <Link href="">
+                      <button
+                        className={`${styles.button} ${styles.view} ${styles.ripple}`}
+                      >
+                        <EditIcon size="20" />
+                      </button>
+                    </Link>
+                    <Link href="">
+                      <button className={`${styles.button} ${styles.delete} `}>
+                        <DeleteIcon size="20" />
+                      </button>
+                    </Link>
+                  </div>
+                </td>
+              </tr>
+            </>
+          ))}
         </tbody>
       </table>
       <Pagination />
