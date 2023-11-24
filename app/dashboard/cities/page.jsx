@@ -10,7 +10,7 @@ const CitiesPage = () => {
     <div className={styles.container}>
       <div className={styles.top}>
         <Search placeholder="Search for a City..." />
-        <Link href="/dashboard/countries">
+        <Link href="/dashboard/countries/add">
           <button className={`${styles.ripple} ${styles.addButton}`}>
             Add Country
           </button>
