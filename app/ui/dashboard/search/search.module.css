@@ -17,3 +17,7 @@
   font-family: inherit;
   font-weight: 500;
 }
+
+.container:focus-within {
+  outline: 1px solid #09f;
+}

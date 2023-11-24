@@ -39,6 +39,10 @@
   font-weight: 500;
 }
 
+.search:focus-within {
+  outline: 1px solid #09f;
+}
+
 .icons {
   display: flex;
   align-items: center;
