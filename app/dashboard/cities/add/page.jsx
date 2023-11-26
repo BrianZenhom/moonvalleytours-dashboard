@@ -16,7 +16,7 @@ export default async function AddCityPage() {
             name="city_header_image"
             required
           />
-          <select required name="countries">
+          <select default="Choose one" required name="countries">
             {data.map((country) => (
               <>
                 <option value={country.country}>{country.country}</option>

@@ -40,6 +40,7 @@
   border-left: 1px solid rgba(255, 255, 255, 0.04);
   border-right: 1px solid rgba(0, 0, 0, 0.231);
   border-top: 1px solid rgba(113, 113, 113, 0.026);
+  white-space: nowrap;
 }
 
 .table thead tr {
@@ -62,6 +63,7 @@
   display: flex;
   justify-content: center;
   text-wrap: balance;
+  width: 150px;
 }
 
 .table tr {

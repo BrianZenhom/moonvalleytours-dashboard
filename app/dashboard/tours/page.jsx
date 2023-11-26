@@ -10,7 +10,7 @@ const ToursPage = () => {
     <div className={styles.container}>
       <div className={styles.top}>
         <Search placeholder="Search for tours in City..." />
-        <Link href="/dashboard/tour/add">
+        <Link href="/dashboard/tours/add">
           <button className={`${styles.ripple} ${styles.addButton}`}>
             Add Tour
           </button>
@@ -26,7 +26,7 @@ const ToursPage = () => {
             <td>Duration</td>
             <td>Included</td>
             <td>Not Included</td>
-            <td>Accessible</td>
+            <td>Cancel</td>
             <td>Action</td>
           </tr>
         </thead>
