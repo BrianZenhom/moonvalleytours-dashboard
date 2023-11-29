@@ -27,7 +27,6 @@ const CitiesPage = async () => {
           <tr>
             <td>City</td>
             <td>Country</td>
-            <td>Tours</td>
             <td>Travellers</td>
             <td>Rate</td>
             <td>Action</td>
@@ -50,7 +49,6 @@ const CitiesPage = async () => {
                   </div>
                 </td>
                 <td>{city.country}</td>
-                <td>0</td>
                 <td>0</td>
                 <td>10/10</td>
                 <td>
